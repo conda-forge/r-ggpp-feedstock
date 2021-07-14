@@ -1,4 +1,4 @@
-{% set version = '0.4.0' %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggpp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggpp/ggpp_{{ version }}.tar.gz
-  sha256: 70f0726567b47d0508fbb3ff704534e61f0b2a6664188c727e1a8cdd9504f315
+  sha256: d46f4dfaa23e5bbcfd5bcd502ce1e715293afec7ce77d34fbd6d02bb0d59489e
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -69,12 +69,8 @@ test:
 about:
   home: https://docs.r4photobiology.info/ggpp/, https://github.com/aphalo/ggpp
   license: GPL-2.0-or-later
-  summary: 'Extensions to ''ggplot2'' respecting the grammar of graphics paradigm. Geomas: geom_table(),
-    geom_plot() and geom_grob() add insets to plots using native data coordinates, while
-    geom_table_npc(), geom_plot_npc() and geom_grob_npc() do the same using "npc" coordinates
-    through new aesthetics "npcx" and "npcy". Statistics: select observations based
-    on 2D density. Positions: radial nudging away from a center point and nudging away
-    from a line or curve.'
+  summary: "Extensions to 'ggplot2' respecting the grammar of graphics paradigm. Geomas: geom_table(), geom_plot() and geom_grob() add insets to plots using native data coordinates, while geom_table_npc(), geom_plot_npc() and geom_grob_npc() do the same using \"npc\" coordinates through new aesthetics \"npcx\" and \"npcy\"\
+    . Statistics: select observations based on 2D density. Positions: radial nudging away from a center point and nudging away from a line or curve."
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
