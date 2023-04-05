@@ -1,11 +1,11 @@
-About r-ggpp
-============
+About r-ggpp-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggpp-feedstock/blob/main/LICENSE.txt)
 
 Home: https://docs.r4photobiology.info/ggpp/, https://github.com/aphalo/ggpp
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggpp-feedstock/blob/main/LICENSE.txt)
 
 Summary: Extensions to 'ggplot2' respecting the grammar of graphics paradigm. Geomas: geom_table(), geom_plot() and geom_grob() add insets to plots using native data coordinates, while geom_table_npc(), geom_plot_npc() and geom_grob_npc() do the same using "npc" coordinates through new aesthetics "npcx" and "npcy". Statistics: select observations based on 2D density. Positions: radial nudging away from a center point and nudging away from a line or curve.
 
