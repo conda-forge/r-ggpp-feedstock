@@ -1,4 +1,4 @@
-{% set version = "0.5.8" %}
+{% set version = "0.5.8-1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggpp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggpp/ggpp_{{ version }}.tar.gz
-  sha256: 047a5ae1491b37587ed7caa839e49c06f1039fcbd1ccd325b2995e7ad81ffa70
+  sha256: 05e607a8522da8134fe3fc5e980f90164c5d784a5131125c1c72ee9c8ee963ca
 
 build:
   merge_build_host: true  # [win]
