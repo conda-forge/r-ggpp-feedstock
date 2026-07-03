@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggpp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggpp/ggpp_{{ version }}.tar.gz
-  sha256: 3d571acf2bd94b10664a2ceac6daaa93ef33a904bf3f3af21775aee14a13167c
+  sha256: 12d205b9c7a2838b590a3c1907f7de88d1da3024eaa9601aea22875369da93ee
 
 build:
   number: 0
